@@ -1,0 +1,65 @@
+
+* {font-family: 맑은고딕; font-size:13px; box-sizing:border-box;}
+
+body{overflow:hidden}
+input:focus, textarea:focus, select:focus {outline: none; box-sizing:border-box;}
+table{border:0px; padding:0; margin:0; vertical-align:middle; display:inline-block box-sizing:border-box;}
+td{border:0px; padding:0; margin:0; box-sizing:border-box;}
+tr{border:0px; padding:0; margin:0; box-sizing:border-box;}
+iframe{border:0px; padding:0; margin:0; scrolling:no box-sizing:border-box;}
+
+input[type=file]::file-selector-button{
+background: #ecf2f9;
+border:solid, 1px, #ecf2f9;
+cursor: pointer;
+vertical-align:middle; 
+box-sizing:border-box;
+width:35px; !important}
+input {vertical-align:middle; text-align:center; }
+
+.xs{border:0px; height:0.1px; width:0.1px; font-size:0.1px; color:#eee1; padding:0px; margin:0px; box-sizing:border-box;}
+
+.줄 {
+      display: flex;
+      flex-direction: row; /* 가로 배치 */
+      justify-content: flex-start; 
+      align-items: center; 
+      gap: 0; 
+	width:calc(100vw - 50px)
+    }
+
+.이모지{border:0px; padding:0px; margin:0px; vertical-align:middle; font-size : 15px; height: 25px; width: 25px; box-sizing:border-box; background-color:#FFF0;}
+.큰이모지{border:0px; padding:0px; margin:0px; vertical-align:middle; font-size : 22px; height: 35px; width: 35px; box-sizing:border-box; background-color:#FFF0;}
+
+#H11{display:block; border: 1px solid #ccc; border-radius: 5px; font-family: 맑은고딕; color: #000000; font-size:12px; background-color:#FFFA; box-sizing: border-box; box-shadow:3px 3px 3px grey; text-align:left; padding:10px; height:70vh; width:calc(100vw - 50px); overflow:auto}
+
+#로그{
+display: flex-columns;
+position: fixed;
+top:3px; right:3px;
+width:33px;
+height:100%
+background-color: #ffffff;
+}
+
+#문서, #할당{
+position: fixed; left:10px; top:25vh;
+height: 65vh; width:100vw;overflow:auto
+}
+
+@media (max-width: 800px) {
+* {font-family: 맑은고딕; font-size:12px; box-sizing:border-box;}
+            }
+
+
+
+/* 모든 onclick 속성을 가진 태그에 스타일 적용 */
+[onclick] {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[onclick]:hover {
+  filter: brightness(80%); /* 밝기를 80%로 낮춰 어두운 효과 */
+}
+
+
